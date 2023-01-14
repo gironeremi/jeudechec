@@ -10,23 +10,11 @@
   <body>
     <section>
         <h1>Bienvenue aux échecs!</h1>  
-        <h2>Test de la balise "canvas"</h2>
-        <canvas id="chessboard" width="400" height="400">
-        </canvas>
+        <h2>Test avec des Div et un Grid</h2>
     </section>
     <div id="chessboard2">
       <div class="row">
-        <div class="square black"><img src="public/media/chess-pawn-regular.svg"></div>
         <div class="square white"><img src="public/media/chess-pawn-regular.svg"></div>
-        <div class="square black"><img src="public/media/chess-pawn-solid.svg"></div>
-        <div class="square white"><img src="public/media/chess-pawn-solid.svg"></div>
-        <div class="square black"></div>
-        <div class="square white"></div>
-        <div class="square black"></div>
-        <div class="square white"></div>
-      </div>
-      <div class="row">
-        <div class="square white"></div>
         <div class="square black"></div>
         <div class="square white"></div>
         <div class="square black"></div>
@@ -34,7 +22,7 @@
         <div class="square black"></div>
         <div class="square white"></div>
         <div class="square black"></div>
-      </div>
+      </div>  
       <div class="row">
         <div class="square black"></div>
         <div class="square white"></div>
@@ -94,8 +82,21 @@
         <div class="square black"></div>
         <div class="square white"></div>
         <div class="square black"></div>
+      </div>
+      <div class="row">
+        <div class="square black"></div>
+        <div class="square white"></div>
+        <div class="square black"></div>
+        <div class="square white"></div>
+        <div class="square black"></div>
+        <div class="square white"></div>
+        <div class="square black"></div>
+        <div class="square white"></div>
       </div>
     </div>
+    <h3>Ici, un canva mais bon...</h3>
+    <canvas id="chessboard" width="400" height="400">
+    </canvas>
   <script type="text/javascript" src="public/js/canvas.js"></script>
   <script type="text/javascript" src="public/js/main.js"></script>
   </body>
