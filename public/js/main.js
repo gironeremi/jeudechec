@@ -1,0 +1,1 @@
+var myCanvas = new Canvas();
