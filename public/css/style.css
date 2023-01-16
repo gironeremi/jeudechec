@@ -15,6 +15,7 @@ h1
   width: 50px;
   height: 50px;
 }
+
 .white {
   background-color: #e2efde;
 }
@@ -22,10 +23,23 @@ h1
 .black {
   background-color: #9b7e46;
 }
-img{
+img {
   width: 95%;
   height: 95%;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.chessboard {
+  width: 400px;
+  height: 400px;
+  display: grid;
+  grid-template-columns: repeat(8, 50px);
+  grid-template-rows: repeat(8, 50px);
+}
+.chessboard .square:nth-child(odd) {
+  background-color: #9b7e46;
+}
+.chessboard .square:nth-child(oven) {
+  background-color: #e2efde; 
 }
