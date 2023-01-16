@@ -1,4 +1,3 @@
-var myCanvas = new Canvas();
 //procédural à mettre en POO. Sélection d'une pièce, surbrilance et dépalcement 
 var piece = document.querySelector('img');
 var selected = false;

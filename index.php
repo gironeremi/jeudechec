@@ -12,7 +12,7 @@
         <h1>Bienvenue aux échecs!</h1>  
         <h2>Test avec des Div et un Grid</h2>
     </section>
-    <div id="chessboard2">
+    <div id="chessboard">
       <div class="row">
         <div class="square white"><img src="public/media/chess-pawn-regular.svg"></div>
         <div class="square black"></div>
@@ -94,9 +94,24 @@
         <div class="square white"></div>
       </div>
     </div>
-    <h3>Ici, un canva mais bon...</h3>
-    <canvas id="chessboard" width="400" height="400">
-    </canvas>
+    <?php
+      $chessboard = array();
+      $letter = 'a';
+      $number = 1;
+      for ($i = 0; $i < 64; $i++) {
+        $chessboard[$letter.$number] = array();
+          if ($number == 8) {
+              $letter++;
+              $number = 1;
+          } else {
+              $number++;
+          }
+      }
+      $chessboard["a2"][0] = "pion";
+      $chessboard["b2"][0] = "pion";
+      $chessboard["a1"][0] = "Tour";
+      ?>
+      <pre><?php var_dump($chessboard) ?></pre>
   <script type="text/javascript" src="public/js/canvas.js"></script>
   <script type="text/javascript" src="public/js/main.js"></script>
   </body>
